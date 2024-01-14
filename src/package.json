@@ -3,12 +3,15 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://programmingashram.github.io/sys-react-story/",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "deploy-storybook": "npx gh-pages -d storybook-static"
+    "deploy-storybook": "npx gh-pages -d storybook-static",
+    "chromatic": "npx chromatic --project-token=chpt_056db397b7a3ed6"
   },
+  "type": "module",
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -26,5 +29,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "storybook": "^7.6.8"
-  }
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "src@1.0.0"
 }
