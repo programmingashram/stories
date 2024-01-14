@@ -1,1 +1,0 @@
-import"./index-76fb7be0.js";import"./_commonjsHelpers-de833af9.js";const r={parameters:{actions:{argTypesRegex:"^on[A-Z].*"},controls:{matchers:{color:/(background|color)$/i,date:/Date$/i}}}};export{r as default};

@@ -1,27 +1,43 @@
-import { Button } from 'sys-react-lib'
-import 'sys-react-lib/dist/index.css'
+// Import necessary dependencies and styles
+import React from 'react';
+import { Button } from 'sys-react-lib';
+import 'sys-react-lib/dist/index.css';
 
-// More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
+// Export the default story object
 export default {
   title: 'Example/Button',
   component: Button,
   parameters: {
-    // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
     layout: 'centered',
   },
-  // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs
   tags: ['autodocs'],
-  // More on argTypes: https://storybook.js.org/docs/api/argtypes
-  // argTypes: {
-  //   backgroundColor: { control: 'color' },
-  // },
 };
 
-// More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
 export const Primary = {
   args: {
     label: 'Accent Button',
-    varient: 'accent'
+    variant: 'accent',
   },
 };
 
+export const Secondary = {
+  args: {
+    label: 'Default Button',
+    variant: 'default',
+  },
+};
+
+export const Disabled = {
+  args: {
+    label: 'Disabled Button',
+    variant: 'disabled',
+    disabled: true,
+  },
+};
+
+// You can also add a story with dynamic args based on user input
+export const Dynamic = (args) => <Button {...args} />;
+Dynamic.args = {
+  label: 'Dynamic Button',
+  variant: 'primary',
+};
